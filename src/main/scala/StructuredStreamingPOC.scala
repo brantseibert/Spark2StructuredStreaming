@@ -5,7 +5,7 @@ object StructuredStreamingPOC {
 
 spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsAccessKeyId", "AKIAITPOXF53PMYDU4NA")
 spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsSecretAccessKey", "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")
-// dbutils.fs.mount(s"s3a://AKIAITPOXF53PMYDU4NA:kI0r1G4%2FG4hbsfanz1Fk0WusRm%2Bx%2F7iR9%2F0Xnp5%2B@bitcoin-spark2", s"/mnt/bitcoin")
+// dbutils.fs.mount(s"s3a://<AWSID>:<AWS-KEY>@<BUCKET>", s"/mnt/bitcoin")
 
 
 // Since we know the data format already, let's define the schema to speed up processing (no need for Spark to infer schema)
