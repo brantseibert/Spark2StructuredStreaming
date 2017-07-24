@@ -3,8 +3,8 @@ import org.apache.spark.sql.types._
 object StructuredStreamingPOC {
 
 
-spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsAccessKeyId", "AKIAITPOXF53PMYDU4NA")
-spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsSecretAccessKey", "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")
+spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsAccessKeyId", "...")
+spark.sparkContext.hadoopConfiguration.set("fs.s3a.awsSecretAccessKey", "...")
 // dbutils.fs.mount(s"s3a://<AWSID>:<AWS-KEY>@<BUCKET>", s"/mnt/bitcoin")
 
 
